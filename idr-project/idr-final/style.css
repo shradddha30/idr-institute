@@ -1,0 +1,23 @@
+:root { --orange: #FF6B00; --black: #111; --white: #FFF; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--black); }
+
+.navbar { position: sticky; top: 0; background: var(--white); display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; z-index: 1000; border-bottom: 1px solid #eee; }
+.nav-logo { height: 45px; }
+nav a { text-decoration: none; color: var(--black); margin-left: 20px; font-weight: 600; transition: 0.3s; }
+nav a:hover { color: var(--orange); }
+
+.hero { background: var(--black); color: var(--white); padding: 100px 8%; text-align: left; }
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero p { font-size: 1.2rem; color: #ccc; margin-bottom: 30px; max-width: 600px; }
+
+.container { padding: 80px 8%; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 80px 8%; background: #f9f9f9; }
+.card { background: var(--white); padding: 30px; border-top: 5px solid var(--orange); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+.contact-section { background: var(--black); padding: 80px 8%; display: flex; justify-content: center; }
+.form-box { background: var(--white); padding: 40px; width: 100%; max-width: 500px; }
+input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; }
+
+.cta-btn { background: var(--orange); color: white; padding: 15px 30px; border: none; cursor: pointer; text-decoration: none; display: inline-block; font-weight: bold; }
+.cta-btn:hover { background: #e65a00; }
