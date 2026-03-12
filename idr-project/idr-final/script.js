@@ -1,20 +1,23 @@
-document.getElementById('idr-form').addEventListener('submit', (e) => {
+// Smooth Scroll
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Form Logic with LocalStorage
+document.getElementById('idr-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    // Data capture karna
-    const formData = {
-        name: e.target.querySelector('input[type="text"]').value,
-        email: e.target.querySelector('input[type="email"]').value,
-        message: e.target.querySelector('textarea').value,
-        date: new Date().toLocaleString()
+    const data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        msg: document.getElementById('message').value,
+        time: new Date().toLocaleString()
     };
-
-    // Browser ki memory mein save karna
-    let messages = JSON.parse(localStorage.getItem('idr_messages')) || [];
-    messages.push(formData);
-    localStorage.setItem('idr_messages', JSON.stringify(messages));
-
-    alert('Message saved in browser! Press F12 > Application > Local Storage to see it.');
-    console.log("All Messages:", messages);
-    e.target.reset();
+    let msgs = JSON.parse(localStorage.getItem('idr_msgs')) || [];
+    msgs.push(data);
+    localStorage.setItem('idr_msgs', JSON.stringify(msgs));
+    alert('Thank you! Your interest has been saved.');
+    this.reset();
 });
