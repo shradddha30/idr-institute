@@ -1,9 +1,1 @@
-<svg width="250" height="60" viewBox="0 0 250 60" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(5, 5)">
-    <path d="M25 5 L45 15 L45 35 L25 45 L5 35 L5 15 Z" fill="#FF6B00" />
-    <path d="M5 15 L25 25 L45 15" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-    <path d="M25 25 L25 45" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-  </g>
-  <text x="60" y="28" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#000000">INSTITUTE OF</text>
-  <text x="60" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#FF6B00">DIGITAL RISK</text>
-</svg>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><path d="M25 5 L45 15 L45 35 L25 45 L5 35 L5 15 Z" fill="#FF6B00" /><path d="M5 15 L25 25 L45 15 M25 25 L25 45" fill="none" stroke="#FFF" stroke-width="2"/><text x="55" y="35" font-family="sans-serif" font-weight="900" font-size="18" fill="#111">IDR INSTITUTE</text></svg>
