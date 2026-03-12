@@ -1,0 +1,25 @@
+:root { --orange: #FF6B00; --black: #111; --white: #fff; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--black); scroll-behavior: smooth; }
+
+.navbar { position: sticky; top: 0; background: var(--white); display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.nav-logo { height: 45px; }
+nav a { text-decoration: none; color: var(--black); margin-left: 20px; font-weight: bold; }
+nav a:hover { color: var(--orange); }
+
+.hero { background: var(--black); color: var(--white); padding: 120px 8%; text-align: left; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+.hero p { font-size: 1.2rem; margin-bottom: 30px; color: #ccc; }
+
+.container { padding: 80px 8%; text-align: center; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 80px 8%; background: #f9f9f9; }
+.card { background: var(--white); padding: 35px; border-top: 5px solid var(--orange); box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+.card:hover { transform: translateY(-10px); }
+
+.contact-section { background: var(--black); padding: 80px 8%; display: flex; justify-content: center; }
+.form-container { background: var(--white); padding: 40px; width: 100%; max-width: 500px; border-radius: 4px; }
+input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+
+.cta-btn { background: var(--orange); color: white; padding: 15px 30px; border: none; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; transition: 0.3s; }
+.cta-btn:hover { background: #e65a00; }
+footer { text-align: center; padding: 30px; font-size: 0.9rem; background: #fff; }
